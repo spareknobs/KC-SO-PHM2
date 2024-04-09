@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1212.0, 679.0 ],
+		"rect" : [ -44.0, -959.0, 1446.0, 903.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,19 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-28",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 146.0, 102.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "newobj",
@@ -141,7 +154,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 344.0, 231.500024557113647, 40.0, 22.0 ],
+					"patching_rect" : [ 339.0, 276.500024557113647, 40.0, 22.0 ],
 					"text" : "s~ vel"
 				}
 
@@ -152,7 +165,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 168.0, 231.500012278556824, 44.0, 22.0 ],
+					"patching_rect" : [ 163.0, 276.500012278556824, 44.0, 22.0 ],
 					"text" : "s~ pos"
 				}
 
@@ -229,8 +242,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 76.0, 164.000012278556824, 40.0, 22.0 ],
-					"text" : "*~ 50."
+					"patching_rect" : [ 76.0, 147.000012278556824, 60.0, 22.0 ],
+					"text" : "*~ 10000."
 				}
 
 			}
@@ -267,7 +280,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 151.0, 75.0, 50.0, 22.0 ]
+					"patching_rect" : [ 241.0, 69.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -280,7 +293,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 220.5, 106.5, 50.0, 22.0 ]
+					"patching_rect" : [ 339.0, 97.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -291,7 +304,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 151.0, 164.000012278556824, 34.0, 22.0 ],
+					"patching_rect" : [ 252.0, 147.000012278556824, 34.0, 22.0 ],
 					"text" : "*~ 0."
 				}
 
@@ -302,7 +315,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 31.0, 202.0, 126.0, 20.0 ],
+					"patching_rect" : [ 252.0, 231.500024557113647, 126.0, 20.0 ],
 					"text" : "Have a look in here ->"
 				}
 
@@ -316,7 +329,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 56.5, 25.0, 615.0, 30.0 ],
+					"patching_rect" : [ 56.5, 13.0, 615.0, 30.0 ],
 					"text" : "Nonlinear Oscillators and Chaos"
 				}
 
@@ -328,7 +341,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 151.0, 106.5, 60.0, 22.0 ],
+					"patching_rect" : [ 241.0, 100.5, 60.0, 22.0 ],
 					"text" : "cycle~ 40"
 				}
 
@@ -351,7 +364,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 255.0, 92.0, 934.0, 679.0 ],
+						"rect" : [ 93.0, 212.0, 1306.0, 877.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -392,7 +405,7 @@
 							}
 , 							{
 								"box" : 								{
-									"code" : "\r\n// parameters\r\nParam mass(0.01,min=0.0001,max=1.0);                         \r\nParam stiffL(30000,min=0.1,max=1e6);\r\nParam damp(0.035,min=0,max=1000);\r\n\r\n// position\r\nHistory x(0.0);\r\n\r\n// velocity\r\nHistory v(0.0);\r\n\r\n// force\r\nHistory F(0.0);\r\n\r\n// Sample Period\r\nT = 1.0 / SAMPLERATE;                                             \r\n\r\n// get external force from input 1\r\n            \r\n// update velocity\r\n\r\n// update position\r\n\r\n// compute Force for the next step\r\n\r\n\r\n// output the mass position (displacement) and velocity\r\nout1 = x;\r\nout2 = v;",
+									"code" : "\r\n// parameters\r\nParam mass(0.01,min=0.0001,max=1.0);                         \r\nParam stiffL(30000,min=0.0,max=1e6);\r\nParam damp(0.035,min=0,max=1000);\r\n\r\n// position\r\nHistory x(0.0);\r\n\r\n// velocity\r\nHistory v(0.0);\r\n\r\n// force\r\nHistory F(0.0);\r\n\r\n// Sample Period\r\nT = 1.0 / SAMPLERATE;                                             \r\n\r\n// get external force from input 1\r\n\r\n// update velocity\r\n\r\n// update position\r\n\r\n// compute Force for the next step\r\n\r\n// output the mass position (displacement) and velocity\r\nout1 = x;\r\nout2 = v;",
 									"fontface" : 0,
 									"fontname" : "<Monospaced>",
 									"fontsize" : 12.0,
@@ -453,7 +466,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 168.0, 202.0, 195.0, 22.0 ],
+					"patching_rect" : [ 163.0, 247.0, 195.0, 22.0 ],
 					"text" : "gen~"
 				}
 
@@ -465,7 +478,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 202.0, 156.0, 35.0, 22.0 ],
+					"patching_rect" : [ 43.0, 247.0, 35.0, 22.0 ],
 					"text" : "reset"
 				}
 
@@ -496,10 +509,58 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"attr" : "stiffL",
+					"id" : "obj-11",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 490.0, 138.0, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "damp",
+					"id" : "obj-19",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 796.0, 138.0, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "mass",
+					"id" : "obj-21",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 960.666682839393616, 138.0, 150.0, 22.0 ]
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"order" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
+					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -513,16 +574,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
-					"order" : 0,
-					"source" : [ "obj-12", 0 ]
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-36", 0 ],
-					"order" : 1,
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -543,7 +602,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -552,6 +611,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
 					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-19", 0 ]
 				}
 
 			}
@@ -571,6 +637,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-26", 1 ],
 					"source" : [ "obj-22", 0 ]
 				}
@@ -580,6 +653,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 1 ],
+					"source" : [ "obj-28", 0 ]
 				}
 
 			}

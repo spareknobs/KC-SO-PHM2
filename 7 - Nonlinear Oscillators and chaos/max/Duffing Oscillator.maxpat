@@ -209,51 +209,51 @@
 					"patching_rect" : [ 677.0, 70.0, 279.0, 60.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 5, "obj-4", "attrui", "attr", "calccount", 5, "obj-4", "attrui", "int", 2, 5, "obj-18", "attrui", "attr", "range", 6, "obj-18", "attrui", "list", -2.0, 2.0, 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.006, 5, "obj-28", "attrui", "attr", "stiffNL", 5, "obj-28", "attrui", "float", 20000.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.00153, 5, "obj-22", "flonum", "float", 1489.0, 5, "obj-6", "live.gain~", "float", -3.045214653015137, 5, "obj-7", "flonum", "float", 166.0, 5, "obj-13", "attrui", "attr", "stiffL", 5, "obj-13", "attrui", "float", 0.1 ]
+							"data" : [ 5, "obj-4", "attrui", "attr", "calccount", 5, "obj-4", "attrui", "int", 2, 5, "obj-18", "attrui", "attr", "range", 6, "obj-18", "attrui", "list", -2.0, 2.0, 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.006, 5, "obj-28", "attrui", "attr", "stiffNL", 5, "obj-28", "attrui", "float", 20000.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.00153, 5, "<invalid>", "flonum", "float", 1489.0, 5, "obj-6", "live.gain~", "float", -3.045214653015137, 5, "obj-7", "flonum", "float", 166.0, 5, "obj-13", "attrui", "attr", "stiffL", 5, "obj-13", "attrui", "float", 0.1 ]
 						}
 , 						{
 							"number" : 2,
-							"data" : [ 5, "obj-4", "attrui", "attr", "calccount", 5, "obj-4", "attrui", "int", 2, 5, "obj-18", "attrui", "attr", "range", 6, "obj-18", "attrui", "list", -2.0, 2.0, 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.018, 5, "obj-28", "attrui", "attr", "stiffNL", 5, "obj-28", "attrui", "float", 10000.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.02, 5, "obj-22", "flonum", "float", 10000.0, 5, "obj-6", "live.gain~", "float", -19.537624359130859, 5, "obj-7", "flonum", "float", 70.0, 5, "obj-13", "attrui", "attr", "stiffL", 5, "obj-13", "attrui", "float", 30000.0 ]
+							"data" : [ 5, "obj-4", "attrui", "attr", "calccount", 5, "obj-4", "attrui", "int", 2, 5, "obj-18", "attrui", "attr", "range", 6, "obj-18", "attrui", "list", -2.0, 2.0, 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.018, 5, "obj-28", "attrui", "attr", "stiffNL", 5, "obj-28", "attrui", "float", 10000.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.02, 5, "<invalid>", "flonum", "float", 10000.0, 5, "obj-6", "live.gain~", "float", -19.537624359130859, 5, "obj-7", "flonum", "float", 70.0, 5, "obj-13", "attrui", "attr", "stiffL", 5, "obj-13", "attrui", "float", 30000.0 ]
 						}
 , 						{
 							"number" : 3,
-							"data" : [ 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.005, 5, "obj-28", "attrui", "attr", "stiffNL", 5, "obj-28", "attrui", "float", 40000.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.31, 5, "obj-22", "flonum", "float", 0.405000001192093, 5, "obj-6", "live.gain~", "float", -19.537624359130859, 5, "obj-7", "flonum", "float", 70.0, 5, "obj-13", "attrui", "attr", "stiffL", 5, "obj-13", "attrui", "float", 2000.0 ]
+							"data" : [ 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.005, 5, "obj-28", "attrui", "attr", "stiffNL", 5, "obj-28", "attrui", "float", 40000.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.31, 5, "<invalid>", "flonum", "float", 0.405000001192093, 5, "obj-6", "live.gain~", "float", -19.537624359130859, 5, "obj-7", "flonum", "float", 70.0, 5, "obj-13", "attrui", "attr", "stiffL", 5, "obj-13", "attrui", "float", 2000.0 ]
 						}
 , 						{
 							"number" : 9,
-							"data" : [ 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.018, 5, "obj-28", "attrui", "attr", "stiffNL", 5, "obj-28", "attrui", "float", 10000.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.02, 5, "obj-22", "flonum", "float", 0.405000001192093, 5, "obj-6", "live.gain~", "float", -12.110074043273926, 5, "obj-7", "flonum", "float", 36.0, 5, "obj-13", "attrui", "attr", "stiffL", 5, "obj-13", "attrui", "float", 1000.0 ]
+							"data" : [ 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.018, 5, "obj-28", "attrui", "attr", "stiffNL", 5, "obj-28", "attrui", "float", 10000.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.02, 5, "<invalid>", "flonum", "float", 0.405000001192093, 5, "obj-6", "live.gain~", "float", -12.110074043273926, 5, "obj-7", "flonum", "float", 36.0, 5, "obj-13", "attrui", "attr", "stiffL", 5, "obj-13", "attrui", "float", 1000.0 ]
 						}
 , 						{
 							"number" : 12,
-							"data" : [ 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.018, 5, "obj-28", "attrui", "attr", "stiffNL", 5, "obj-28", "attrui", "float", 3373.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.02, 5, "obj-22", "flonum", "float", 0.405000001192093, 5, "obj-6", "live.gain~", "float", -12.110074043273926, 5, "obj-7", "flonum", "float", 102.0, 5, "obj-13", "attrui", "attr", "stiffL", 5, "obj-13", "attrui", "float", 0.1 ]
+							"data" : [ 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.018, 5, "obj-28", "attrui", "attr", "stiffNL", 5, "obj-28", "attrui", "float", 3373.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.02, 5, "<invalid>", "flonum", "float", 0.405000001192093, 5, "obj-6", "live.gain~", "float", -12.110074043273926, 5, "obj-7", "flonum", "float", 102.0, 5, "obj-13", "attrui", "attr", "stiffL", 5, "obj-13", "attrui", "float", 0.1 ]
 						}
 , 						{
 							"number" : 13,
-							"data" : [ 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.018, 5, "obj-28", "attrui", "attr", "stiffNL", 5, "obj-28", "attrui", "float", 10000.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.02, 5, "obj-22", "flonum", "float", 0.405000001192093, 5, "obj-6", "live.gain~", "float", -12.110074043273926, 5, "obj-7", "flonum", "float", 36.0, 5, "obj-13", "attrui", "attr", "stiffL", 5, "obj-13", "attrui", "float", 1000.0 ]
+							"data" : [ 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.018, 5, "obj-28", "attrui", "attr", "stiffNL", 5, "obj-28", "attrui", "float", 10000.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.02, 5, "<invalid>", "flonum", "float", 0.405000001192093, 5, "obj-6", "live.gain~", "float", -12.110074043273926, 5, "obj-7", "flonum", "float", 36.0, 5, "obj-13", "attrui", "attr", "stiffL", 5, "obj-13", "attrui", "float", 1000.0 ]
 						}
 , 						{
 							"number" : 14,
-							"data" : [ 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.0029, 5, "obj-28", "attrui", "attr", "stiffNL", 5, "obj-28", "attrui", "float", 20000.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.00251, 5, "obj-22", "flonum", "float", 0.405000001192093, 5, "obj-6", "live.gain~", "float", -12.110074043273926, 5, "obj-7", "flonum", "float", 275.0, 5, "obj-13", "attrui", "attr", "stiffL", 5, "obj-13", "attrui", "float", 0.1 ]
+							"data" : [ 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.0029, 5, "obj-28", "attrui", "attr", "stiffNL", 5, "obj-28", "attrui", "float", 20000.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.00251, 5, "<invalid>", "flonum", "float", 0.405000001192093, 5, "obj-6", "live.gain~", "float", -12.110074043273926, 5, "obj-7", "flonum", "float", 275.0, 5, "obj-13", "attrui", "attr", "stiffL", 5, "obj-13", "attrui", "float", 0.1 ]
 						}
 , 						{
 							"number" : 15,
-							"data" : [ 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.0085, 5, "obj-28", "attrui", "attr", "stiffNL", 5, "obj-28", "attrui", "float", 30000.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.0142, 5, "obj-22", "flonum", "float", 0.405000001192093, 5, "obj-6", "live.gain~", "float", -12.110074043273926, 5, "obj-7", "flonum", "float", 275.0, 5, "obj-13", "attrui", "attr", "stiffL", 5, "obj-13", "attrui", "float", 0.1 ]
+							"data" : [ 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.0085, 5, "obj-28", "attrui", "attr", "stiffNL", 5, "obj-28", "attrui", "float", 30000.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.0142, 5, "<invalid>", "flonum", "float", 0.405000001192093, 5, "obj-6", "live.gain~", "float", -12.110074043273926, 5, "obj-7", "flonum", "float", 275.0, 5, "obj-13", "attrui", "attr", "stiffL", 5, "obj-13", "attrui", "float", 0.1 ]
 						}
 , 						{
 							"number" : 17,
-							"data" : [ 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.018, 5, "obj-28", "attrui", "attr", "stiffNL", 5, "obj-28", "attrui", "float", 10000.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.02, 5, "obj-22", "flonum", "float", 0.405000001192093, 5, "obj-6", "live.gain~", "float", -12.110074043273926, 5, "obj-7", "flonum", "float", 36.0, 5, "obj-13", "attrui", "attr", "stiffL", 5, "obj-13", "attrui", "float", 1000.0 ]
+							"data" : [ 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.018, 5, "obj-28", "attrui", "attr", "stiffNL", 5, "obj-28", "attrui", "float", 10000.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.02, 5, "<invalid>", "flonum", "float", 0.405000001192093, 5, "obj-6", "live.gain~", "float", -12.110074043273926, 5, "obj-7", "flonum", "float", 36.0, 5, "obj-13", "attrui", "attr", "stiffL", 5, "obj-13", "attrui", "float", 1000.0 ]
 						}
 , 						{
 							"number" : 18,
-							"data" : [ 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.018, 5, "obj-28", "attrui", "attr", "stiffNL", 5, "obj-28", "attrui", "float", 10000.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.02, 5, "obj-22", "flonum", "float", 0.405000001192093, 5, "obj-6", "live.gain~", "float", -12.110074043273926, 5, "obj-7", "flonum", "float", 36.0, 5, "obj-13", "attrui", "attr", "stiffL", 5, "obj-13", "attrui", "float", 1000.0 ]
+							"data" : [ 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.018, 5, "obj-28", "attrui", "attr", "stiffNL", 5, "obj-28", "attrui", "float", 10000.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.02, 5, "<invalid>", "flonum", "float", 0.405000001192093, 5, "obj-6", "live.gain~", "float", -12.110074043273926, 5, "obj-7", "flonum", "float", 36.0, 5, "obj-13", "attrui", "attr", "stiffL", 5, "obj-13", "attrui", "float", 1000.0 ]
 						}
 , 						{
 							"number" : 21,
-							"data" : [ 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.006, 5, "obj-28", "attrui", "attr", "stiffNL", 5, "obj-28", "attrui", "float", 30000.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.01, 5, "obj-22", "flonum", "float", 62.0, 5, "obj-6", "live.gain~", "float", -28.091241836547852, 5, "obj-7", "flonum", "float", 10.0, 5, "obj-13", "attrui", "attr", "stiffL", 5, "obj-13", "attrui", "float", 1.0 ]
+							"data" : [ 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.006, 5, "obj-28", "attrui", "attr", "stiffNL", 5, "obj-28", "attrui", "float", 30000.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.01, 5, "<invalid>", "flonum", "float", 62.0, 5, "obj-6", "live.gain~", "float", -28.091241836547852, 5, "obj-7", "flonum", "float", 10.0, 5, "obj-13", "attrui", "attr", "stiffL", 5, "obj-13", "attrui", "float", 1.0 ]
 						}
 , 						{
 							"number" : 22,
-							"data" : [ 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.035, 5, "obj-28", "attrui", "attr", "stiffNL", 5, "obj-28", "attrui", "float", 30000.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.01, 5, "obj-22", "flonum", "float", 62.0, 5, "obj-6", "live.gain~", "float", -28.091241836547852, 5, "obj-7", "flonum", "float", 873.0, 5, "obj-13", "attrui", "attr", "stiffL", 5, "obj-13", "attrui", "float", 30000.0 ]
+							"data" : [ 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.035, 5, "obj-28", "attrui", "attr", "stiffNL", 5, "obj-28", "attrui", "float", 30000.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.01, 5, "<invalid>", "flonum", "float", 62.0, 5, "obj-6", "live.gain~", "float", -28.091241836547852, 5, "obj-7", "flonum", "float", 873.0, 5, "obj-13", "attrui", "attr", "stiffL", 5, "obj-13", "attrui", "float", 30000.0 ]
 						}
  ]
 				}
@@ -300,26 +300,13 @@
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
-					"id" : "obj-22",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 219.5, 149.5, 73.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-26",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 150.0, 207.000012278556824, 34.0, 22.0 ],
-					"text" : "*~ 0."
+					"patching_rect" : [ 150.0, 207.000012278556824, 54.0, 22.0 ],
+					"text" : "*~ 7000."
 				}
 
 			}
@@ -713,13 +700,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-26", 1 ],
-					"source" : [ "obj-22", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-26", 0 ]
 				}
@@ -819,8 +799,69 @@
 			"inherited_shortname" : 1
 		}
 ,
-		"dependency_cache" : [  ],
-		"autosave" : 0
+		"dependency_cache" : [ 			{
+				"name" : "Duffing Oscillator.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 1,
+		"snapshot" : 		{
+			"filetype" : "C74Snapshot",
+			"version" : 2,
+			"minorversion" : 0,
+			"name" : "snapshotlist",
+			"origin" : "jpatcher",
+			"type" : "list",
+			"subtype" : "Undefined",
+			"embed" : 1,
+			"snapshot" : 			{
+				"valuedictionary" : 				{
+					"parameter_values" : 					{
+						"live.gain~[1]" : -14.010877506291102
+					}
+
+				}
+
+			}
+,
+			"snapshotlist" : 			{
+				"current_snapshot" : 0,
+				"entries" : [ 					{
+						"filetype" : "C74Snapshot",
+						"version" : 2,
+						"minorversion" : 0,
+						"name" : "Duffing Oscillator",
+						"origin" : "Duffing Oscillator",
+						"type" : "patcher",
+						"subtype" : "Undefined",
+						"embed" : 0,
+						"snapshot" : 						{
+							"valuedictionary" : 							{
+								"parameter_values" : 								{
+									"live.gain~[1]" : -14.010877506291102
+								}
+
+							}
+
+						}
+,
+						"fileref" : 						{
+							"name" : "Duffing Oscillator",
+							"filename" : "Duffing Oscillator.maxsnap",
+							"filepath" : "~/Documents/Max 8/Snapshots",
+							"filepos" : -1,
+							"snapshotfileid" : "765c30afae802ef3b0e6317168eba5e2"
+						}
+
+					}
+ ]
+			}
+
+		}
+
 	}
 
 }

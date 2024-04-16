@@ -1,0 +1,20 @@
+
+/ Example usage of meshes 
+
+
+@K param 0.1
+@Z param 0.001
+@eX audioParam @in2
+@eY audioParam @in3
+
+//mesh : { func :"compute_open_mesh", nbArgs:5, argTypes : ["nbX", "nbY", //"M", "K", "Z"], optArgs : ["Zo"]},
+ //   "closedMesh" : { func :"compute_closed_mesh", argTypes : ["nbX", "nbY", //"M", "K", "Z"], nbArgs:5, optArgs : ["Zo"]},
+ //   "cornerMesh" : { func :"compute_corner_mesh", argTypes : ["nbX", "nbY", // "M", "K", "Z"], nbArgs:5, optArgs : ["Zo"]}
+
+
+@mesh closedMesh 20 20 1. K Z 0. 0.
+
+@in1 frcInput [@mesh eX eY]
+
+@out1 posOutput [@mesh 0.15 0.15]
+

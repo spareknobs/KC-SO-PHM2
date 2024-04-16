@@ -1,0 +1,17 @@
+
+# Example usage of meshes 
+
+
+@K param 0.1
+@Z param 0.001
+@eX audioParam @in2
+@eY audioParam @in3
+
+# syntax: cornerMesh  n masses along x  "n masses along y"  "Mass"  "Stiff"  "Damp" Pos Vel
+
+@mesh cornerMesh 20 20 1. K Z 0. 0.
+
+@in1 frcInput [@mesh eX eY]
+
+@out1 posOutput [@mesh 0.15 0.15]
+

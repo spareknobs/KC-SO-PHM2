@@ -1,0 +1,22 @@
+# MIMS script file
+# Script author: Riccardo
+
+@k param 0.1
+@d param 0.001
+
+@g1 ground 0.
+@m1 mass 5.0  0.  0.
+@m2 mass 5.0  0.  0.
+@m3 mass 5.0  0.  0.
+@g2 ground 0.
+
+
+@k1 springDamper @g1 @m1 k d
+@k2 springDamper @m1 @m2 k d
+@k3 springDamper @m2 @m3 k d
+@k4 springDamper @m3 @g2 k d
+
+@in1 frcInput @m1
+@out1 posOutput @m2
+
+# end of MIMS script

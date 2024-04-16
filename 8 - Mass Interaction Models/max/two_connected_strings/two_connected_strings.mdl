@@ -1,0 +1,13 @@
+# MIMS script file
+# Script author: {yourname}
+
+@k param 0.1
+@d param 0.001
+@s1 string 100 1. 0.1 0.01 0. 0.
+@s2 string 100 1. 0.13 0.01 0. 0.
+@kd springDamper [@s1 0.2] [@s2 0.5] k d
+@in1 frcInput [@s1 0.5]
+@out1 posOutput [@s2 0.75]
+
+
+# end of MIMS script

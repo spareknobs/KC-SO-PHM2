@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1212.0, 679.0 ],
+		"rect" : [ -101.0, -981.0, 1307.0, 865.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -88,7 +88,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 541.0, 432.0, 224.0, 184.0 ],
+					"patching_rect" : [ 541.0, 432.0, 254.0, 184.0 ],
 					"sono" : 1
 				}
 
@@ -997,8 +997,8 @@
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "signal" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -1010,7 +1010,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 70.0, 87.0, 934.0, 679.0 ],
+						"rect" : [ 34.0, 87.0, 1852.0, 959.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1040,18 +1040,7 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-3",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 773.0, 618.0, 35.0, 22.0 ],
-									"text" : "out 2"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"code" : "\r\n// 2 masses\r\n//\r\n//\tspring1\t\t\tspring3\t\tspring2\r\n//---((((((---M1---(((((---M2----(((((---//\r\n\r\n// Mass 1 Parameters\r\nParam mass1(0.01,min=0.0001,max=1.0);                         \r\nParam stiff1(5000,min=0.1,max=1e6);\r\nParam damp1(0.0,min=0,max=1000);\r\n\r\n// Mass 2 Parameters\r\nParam mass2(0.01,min=0.0001,max=1.0);                         \r\nParam stiff2(5000,min=0.1,max=1e6);\r\nParam damp2(0.0,min=0,max=1000);\r\n\r\n// Coupling Spring Stiffness\r\nParam stiff3(2000,min=0.1,max=1e6);\r\n\r\n// Mass 1 position and velocity\r\nHistory x1(0.0);\r\nHistory v1(0.0);\r\n\r\n// Mass 2 position and velocity\r\nHistory x2(0.0);\r\nHistory v2(0.0);\r\n\r\n// Sample Period\r\nT = 1.0 / SAMPLERATE;                              \r\n\r\n// get external force from input 1\r\nFext = in1;\r\n\r\n// compute force between the two masses:\r\n// if x2 > x the spring is elongated -> Force will be < for mass2 and > for mass1\r\nFcouple = ( x2 - x1 ) * stiff3;\r\n\r\n// Add for each mass the forces acting upon them\r\nF1 = -stiff1*x1 - damp1*v1 + Fcouple + Fext;     \r\nF2 = -stiff2*x2 - damp2*v2 - Fcouple;   \r\n\r\n// Update Mass 1 velocity and position\r\nv1 = v1 + T/mass1 * F1;\r\nx1 = x1 + T*v1;\r\n\r\n// Update Mass 2 velocity and position\r\nv2 = v2 + T/mass2 * F2;\r\nx2 = x2 + T*v2;\r\n    \r\n// output the mass position (displacement)\r\nout1 = x2;",
+									"code" : "\r\n// 2 masses\r\n//\r\n//\tspring1\t\t\tspring3\t\tspring2\r\n//---((((((---M1---(((((---M2----(((((---//\r\n\r\n// Mass 1 Parameters\r\nParam mass1(0.01,min=0.0001,max=1.0);                         \r\nParam stiff1(5000,min=0.1,max=1e6);\r\nParam damp1(0.0,min=0,max=1000);\r\n\r\n// Mass 2 Parameters\r\nParam mass2(0.01,min=0.0001,max=1.0);                         \r\nParam stiff2(5000,min=0.1,max=1e6);\r\nParam damp2(0.0,min=0,max=1000);\r\n\r\n// Coupling Spring Stiffness\r\nParam stiff3(2000,min=0.1,max=1e6);\r\n\r\n// Mass 1 position and velocity\r\nHistory x1(0.0);\r\nHistory v1(0.0);\r\n\r\n// Mass 2 position and velocity\r\nHistory x2(0.0);\r\nHistory v2(0.0);\r\n\r\n// Sample Period\r\nT = 1.0 / SAMPLERATE;                              \r\n\r\nFext = in1;\r\n\r\n// coupling force    \r\nFcouple = (x2 - x1) * stiff3;\r\n\r\n// mass 1\r\nF1 = -stiff1 * x1 - damp1 * v1 + Fcouple + Fext;\r\n\r\n// mass 2\r\nF2 = -stiff2 * x2 - damp2 * v2 - Fcouple;\r\n\r\nv1 = v1 + T/mass1 * F1;\r\nv2 = v2 + T/mass2 * F2;\r\n\r\nx1 = x1 + T * v1;\r\nx2 = x2 + T * v2;\r\n\r\n// output the mass position (displacement)\r\nout1 = x2;",
 									"fontface" : 0,
 									"fontname" : "<Monospaced>",
 									"fontsize" : 12.0,
@@ -1422,7 +1411,7 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "Coupled_Mass_Spring_Damper_Gen_Simulation copy.maxsnap",
+				"name" : "Coupled_Mass_Spring_Damper_Gen_Simulation copy_20240402.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../../../../Documents/Max 8/Snapshots",
 				"type" : "mx@s",
@@ -1454,7 +1443,7 @@
 			"snapshot" : 			{
 				"valuedictionary" : 				{
 					"parameter_values" : 					{
-						"live.gain~" : -7.462943420732202
+						"live.gain~" : -8.853814208969119
 					}
 
 				}
@@ -1468,14 +1457,14 @@
 						"version" : 2,
 						"minorversion" : 0,
 						"name" : "Coupled_Mass_Spring_Damper_Gen_Simulation copy",
-						"origin" : "Coupled_Harmonic_Oscillators",
+						"origin" : "Coupled_Harmonic_Oscillators_template",
 						"type" : "patcher",
 						"subtype" : "Undefined",
 						"embed" : 1,
 						"snapshot" : 						{
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
-									"live.gain~" : -7.462943420732202
+									"live.gain~" : -8.853814208969119
 								}
 
 							}
@@ -1484,10 +1473,10 @@
 ,
 						"fileref" : 						{
 							"name" : "Coupled_Mass_Spring_Damper_Gen_Simulation copy",
-							"filename" : "Coupled_Mass_Spring_Damper_Gen_Simulation copy.maxsnap",
+							"filename" : "Coupled_Mass_Spring_Damper_Gen_Simulation copy_20240402.maxsnap",
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
-							"snapshotfileid" : "03c6ead57ac16b5288a28d2113dde066"
+							"snapshotfileid" : "9db0948e3f75a90ef38b75704f3a141a"
 						}
 
 					}

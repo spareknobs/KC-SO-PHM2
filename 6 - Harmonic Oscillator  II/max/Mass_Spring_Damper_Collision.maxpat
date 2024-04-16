@@ -40,38 +40,70 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-24",
-					"maxclass" : "comment",
+					"format" : 6,
+					"id" : "obj-31",
+					"maxclass" : "flonum",
 					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 652.0, 269.5, 143.0, 20.0 ],
-					"text" : "Coupling Spring Stiffness"
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 266.0, 187.0, 50.0, 22.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-26",
+					"floatoutput" : 1,
+					"id" : "obj-13",
+					"maxclass" : "slider",
+					"mult" : 0.001,
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 640.0, 416.0, 32.0, 132.0 ],
+					"size" : 1000.0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 852.0, 244.0, 237.0, 20.0 ],
+					"text" : "if x > barrierPos, collision will occur"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
 					"maxclass" : "preset",
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "preset", "int", "preset", "int", "" ],
-					"patching_rect" : [ 333.0, 144.5, 100.0, 40.0 ],
+					"patching_rect" : [ 413.0, 191.0, 100.0, 40.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 5, "obj-25", "attrui", "attr", "stiff3", 5, "obj-25", "attrui", "float", 1047.0, 5, "obj-7", "attrui", "attr", "damp2", 5, "obj-7", "attrui", "float", 0.001, 5, "obj-6", "attrui", "attr", "mass2", 5, "obj-6", "attrui", "float", 0.01, 5, "obj-4", "attrui", "attr", "stiff2", 5, "obj-4", "attrui", "float", 4901.0, 5, "obj-29", "attrui", "attr", "damp1", 5, "obj-29", "attrui", "float", 0.011, 5, "obj-28", "attrui", "attr", "stiff1", 5, "obj-28", "attrui", "float", 4877.0, 5, "obj-27", "attrui", "attr", "mass1", 5, "obj-27", "attrui", "float", 0.01, 5, "obj-2", "live.gain~", "float", 0.0, 5, "obj-34", "toggle", "int", 1, 5, "<invalid>", "flonum", "float", 0.050000000745058 ]
+							"data" : [ 5, "obj-30", "attrui", "attr", "collisionDamp", 5, "obj-30", "attrui", "float", 4.0, 5, "obj-6", "attrui", "attr", "barrierPos", 5, "obj-6", "attrui", "float", 0.3, 5, "obj-4", "attrui", "attr", "collisionStiff", 5, "obj-4", "attrui", "float", 10000.0, 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.17, 5, "obj-28", "attrui", "attr", "stiff", 5, "obj-28", "attrui", "float", 4508.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.03, 5, "obj-2", "live.gain~", "float", 0.0, 5, "obj-34", "toggle", "int", 1, 6, "obj-43", "number~", "list", 0.0, 0.0, 5, "<invalid>", "flonum", "float", 0.0 ]
 						}
 , 						{
 							"number" : 2,
-							"data" : [ 5, "obj-25", "attrui", "attr", "stiff3", 5, "obj-25", "attrui", "float", 326.0, 5, "obj-7", "attrui", "attr", "damp2", 5, "obj-7", "attrui", "float", 0.002, 5, "obj-6", "attrui", "attr", "mass2", 5, "obj-6", "attrui", "float", 0.01, 5, "obj-4", "attrui", "attr", "stiff2", 5, "obj-4", "attrui", "float", 2288.0, 5, "obj-29", "attrui", "attr", "damp1", 5, "obj-29", "attrui", "float", 0.001, 5, "obj-28", "attrui", "attr", "stiff1", 5, "obj-28", "attrui", "float", 2961.0, 5, "obj-27", "attrui", "attr", "mass1", 5, "obj-27", "attrui", "float", 0.01, 5, "obj-2", "live.gain~", "float", 0.0, 5, "obj-34", "toggle", "int", 1 ]
+							"data" : [ 5, "obj-30", "attrui", "attr", "collisionDamp", 5, "obj-30", "attrui", "float", 100.0, 5, "obj-6", "attrui", "attr", "barrierPos", 5, "obj-6", "attrui", "float", 0.36, 5, "obj-4", "attrui", "attr", "collisionStiff", 5, "obj-4", "attrui", "float", 1000000.0, 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.3, 5, "obj-28", "attrui", "attr", "stiff", 5, "obj-28", "attrui", "float", 2000.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.03, 5, "obj-2", "live.gain~", "float", 0.0, 5, "obj-34", "toggle", "int", 1, 6, "obj-43", "number~", "list", 0.0, 0.0 ]
 						}
 , 						{
 							"number" : 3,
-							"data" : [ 5, "obj-25", "attrui", "attr", "stiff3", 5, "obj-25", "attrui", "float", 2880.0, 5, "obj-7", "attrui", "attr", "damp2", 5, "obj-7", "attrui", "float", 0.001, 5, "obj-6", "attrui", "attr", "mass2", 5, "obj-6", "attrui", "float", 0.01, 5, "obj-4", "attrui", "attr", "stiff2", 5, "obj-4", "attrui", "float", 8872.0, 5, "obj-29", "attrui", "attr", "damp1", 5, "obj-29", "attrui", "float", 0.001, 5, "obj-28", "attrui", "attr", "stiff1", 5, "obj-28", "attrui", "float", 7328.0, 5, "obj-27", "attrui", "attr", "mass1", 5, "obj-27", "attrui", "float", 0.01, 5, "obj-2", "live.gain~", "float", 0.0, 5, "obj-34", "toggle", "int", 1 ]
+							"data" : [ 5, "obj-30", "attrui", "attr", "collisionDamp", 5, "obj-30", "attrui", "float", 100.0, 5, "obj-6", "attrui", "attr", "barrierPos", 5, "obj-6", "attrui", "float", 0.36, 5, "obj-4", "attrui", "attr", "collisionStiff", 5, "obj-4", "attrui", "float", 1000000.0, 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.07, 5, "obj-28", "attrui", "attr", "stiff", 5, "obj-28", "attrui", "float", 1913.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.03, 5, "obj-2", "live.gain~", "float", 0.0, 5, "obj-34", "toggle", "int", 1, 6, "obj-43", "number~", "list", 0.0, 0.0 ]
 						}
 , 						{
-							"number" : 5,
-							"data" : [ 5, "obj-25", "attrui", "attr", "stiff3", 5, "obj-25", "attrui", "float", 10884.0, 5, "obj-7", "attrui", "attr", "damp2", 5, "obj-7", "attrui", "float", 0.001, 5, "obj-6", "attrui", "attr", "mass2", 5, "obj-6", "attrui", "float", 0.01, 5, "obj-4", "attrui", "attr", "stiff2", 5, "obj-4", "attrui", "float", 16171.0, 5, "obj-29", "attrui", "attr", "damp1", 5, "obj-29", "attrui", "float", 0.001, 5, "obj-28", "attrui", "attr", "stiff1", 5, "obj-28", "attrui", "float", 550.0, 5, "obj-27", "attrui", "attr", "mass1", 5, "obj-27", "attrui", "float", 0.01, 5, "obj-2", "live.gain~", "float", 0.0, 5, "obj-34", "toggle", "int", 1 ]
+							"number" : 4,
+							"data" : [ 5, "obj-30", "attrui", "attr", "collisionDamp", 5, "obj-30", "attrui", "float", 2.0, 5, "obj-6", "attrui", "attr", "barrierPos", 5, "obj-6", "attrui", "float", 0.47, 5, "obj-4", "attrui", "attr", "collisionStiff", 5, "obj-4", "attrui", "float", 1000000.0, 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.07, 5, "obj-28", "attrui", "attr", "stiff", 5, "obj-28", "attrui", "float", 1913.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.03, 5, "obj-2", "live.gain~", "float", 0.0, 5, "obj-34", "toggle", "int", 1, 6, "obj-43", "number~", "list", 0.0, 0.0 ]
+						}
+, 						{
+							"number" : 9,
+							"data" : [ 5, "obj-30", "attrui", "attr", "collisionDamp", 5, "obj-30", "attrui", "float", 0.43, 5, "obj-6", "attrui", "attr", "barrierPos", 5, "obj-6", "attrui", "float", 0.43, 5, "obj-4", "attrui", "attr", "collisionStiff", 5, "obj-4", "attrui", "float", 1000000.0, 5, "obj-29", "attrui", "attr", "damp", 5, "obj-29", "attrui", "float", 0.459, 5, "obj-28", "attrui", "attr", "stiff", 5, "obj-28", "attrui", "float", 2000.0, 5, "obj-27", "attrui", "attr", "mass", 5, "obj-27", "attrui", "float", 0.03, 5, "obj-2", "live.gain~", "float", 0.0, 5, "obj-34", "toggle", "int", 1, 6, "obj-43", "number~", "list", 0.0, 0.0 ]
 						}
  ]
 				}
@@ -79,41 +111,13 @@
 			}
 , 			{
 				"box" : 				{
-					"domain" : [ 0.0, 4050.0 ],
-					"id" : "obj-22",
-					"interval" : 103,
-					"logfreq" : 1,
-					"maxclass" : "spectroscope~",
-					"monochrome" : 0,
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 541.0, 432.0, 224.0, 184.0 ],
-					"sono" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-20",
+					"id" : "obj-26",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 165.0, 293.0, 54.0, 22.0 ],
-					"text" : "*~ 3000."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 169.0, 131.0, 70.0, 22.0 ],
-					"text" : "loadmess 1"
+					"patching_rect" : [ 154.0, 246.000012278556824, 57.0, 22.0 ],
+					"text" : "*~ 15000"
 				}
 
 			}
@@ -123,8 +127,35 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 177.0, 104.5, 85.0, 20.0 ],
+					"patching_rect" : [ 596.0, 153.0, 85.0, 20.0 ],
 					"text" : "Force Impulse"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-45",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 399.0, 377.5, 254.0, 20.0 ],
+					"text" : "x max"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-43",
+					"maxclass" : "number~",
+					"mode" : 2,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 326.0, 383.0, 53.0, 22.0 ],
+					"sig" : 0.0
 				}
 
 			}
@@ -134,7 +165,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 84.0, 427.0, 61.0, 20.0 ],
+					"patching_rect" : [ 73.0, 407.0, 61.0, 20.0 ],
 					"text" : "safety net"
 				}
 
@@ -146,7 +177,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 161.0, 427.0, 78.0, 22.0 ],
+					"patching_rect" : [ 150.0, 407.0, 78.0, 22.0 ],
 					"text" : "clip~ -0.8 0.8"
 				}
 
@@ -788,7 +819,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 572.0, 112.0, 21.0, 79.0 ],
+					"patching_rect" : [ 709.0, 123.5, 21.0, 79.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -800,7 +831,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 719.0, 49.5, 168.0, 22.0 ],
+					"patching_rect" : [ 856.0, 61.0, 168.0, 22.0 ],
 					"text" : "size 0.5, fill 1, apply blackman"
 				}
 
@@ -812,7 +843,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 715.0, 75.5, 158.0, 22.0 ],
+					"patching_rect" : [ 852.0, 87.0, 158.0, 22.0 ],
 					"text" : "size 1, fill 1, apply blackman"
 				}
 
@@ -824,7 +855,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 541.0, 20.0, 58.0, 22.0 ],
+					"patching_rect" : [ 852.0, 29.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -835,7 +866,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 19.0, 376.0, 126.0, 20.0 ],
+					"patching_rect" : [ 8.0, 356.0, 126.0, 20.0 ],
 					"text" : "Have a look in here ->"
 				}
 
@@ -846,12 +877,11 @@
 					"fontname" : "Ableton Sans Bold Regular",
 					"fontsize" : 14.0,
 					"id" : "obj-9",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 18.5, 49.5, 469.0, 40.0 ],
-					"text" : "Digital Implementation using a Symplectic Forward-Euler Finite Difference Scheme"
+					"patching_rect" : [ 56.5, 59.5, 469.0, 23.0 ],
+					"text" : "Digital Implementation using a Forward-Euler Finite Difference Scheme"
 				}
 
 			}
@@ -864,8 +894,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 28.5, 12.0, 343.0, 30.0 ],
-					"text" : "Coupled Mass-Spring-Damper Oscillators"
+					"patching_rect" : [ 56.5, 25.0, 469.0, 30.0 ],
+					"text" : "Mass-Spring-Damper Oscillator + Collision"
 				}
 
 			}
@@ -877,7 +907,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 169.0, 160.5, 24.0, 24.0 ]
+					"patching_rect" : [ 150.0, 123.5, 24.0, 24.0 ]
 				}
 
 			}
@@ -888,8 +918,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 169.0, 186.5, 69.0, 22.0 ],
-					"text" : "metro 3000"
+					"patching_rect" : [ 150.0, 149.5, 69.0, 22.0 ],
+					"text" : "metro 2000"
 				}
 
 			}
@@ -900,7 +930,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 172.0, 248.5, 68.0, 22.0 ],
+					"patching_rect" : [ 153.0, 211.5, 68.0, 22.0 ],
 					"text" : "play~ force"
 				}
 
@@ -912,7 +942,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 541.0, 49.5, 165.0, 22.0 ],
+					"patching_rect" : [ 678.0, 61.0, 165.0, 22.0 ],
 					"text" : "size 16, fill 1, apply blackman"
 				}
 
@@ -925,7 +955,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 6,
 					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
-					"patching_rect" : [ 595.0, 112.0, 254.0, 93.0 ],
+					"patching_rect" : [ 732.0, 123.5, 254.0, 93.0 ],
 					"setmode" : 3
 				}
 
@@ -937,7 +967,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 541.0, 83.5, 86.0, 22.0 ],
+					"patching_rect" : [ 678.0, 95.0, 86.0, 22.0 ],
 					"text" : "buffer~ force 8"
 				}
 
@@ -951,7 +981,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 272.0, 432.0, 234.0, 184.0 ],
+					"patching_rect" : [ 247.0, 416.0, 380.0, 254.0 ],
 					"samples" : 4000.0
 				}
 
@@ -962,7 +992,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 161.0, 607.5, 45.0, 45.0 ]
+					"patching_rect" : [ 149.0, 633.5, 45.0, 45.0 ]
 				}
 
 			}
@@ -975,7 +1005,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 161.0, 461.0, 48.0, 136.0 ],
+					"patching_rect" : [ 150.0, 441.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -1010,7 +1040,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 70.0, 87.0, 934.0, 679.0 ],
+						"rect" : [ 312.0, 107.0, 934.0, 679.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1044,23 +1074,23 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 773.0, 618.0, 35.0, 22.0 ],
+									"patching_rect" : [ 703.0, 568.0, 35.0, 22.0 ],
 									"text" : "out 2"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"code" : "\r\n// 2 masses\r\n//\r\n//\tspring1\t\t\tspring3\t\tspring2\r\n//---((((((---M1---(((((---M2----(((((---//\r\n\r\n// Mass 1 Parameters\r\nParam mass1(0.01,min=0.0001,max=1.0);                         \r\nParam stiff1(5000,min=0.1,max=1e6);\r\nParam damp1(0.0,min=0,max=1000);\r\n\r\n// Mass 2 Parameters\r\nParam mass2(0.01,min=0.0001,max=1.0);                         \r\nParam stiff2(5000,min=0.1,max=1e6);\r\nParam damp2(0.0,min=0,max=1000);\r\n\r\n// Coupling Spring Stiffness\r\nParam stiff3(2000,min=0.1,max=1e6);\r\n\r\n// Mass 1 position and velocity\r\nHistory x1(0.0);\r\nHistory v1(0.0);\r\n\r\n// Mass 2 position and velocity\r\nHistory x2(0.0);\r\nHistory v2(0.0);\r\n\r\n// Sample Period\r\nT = 1.0 / SAMPLERATE;                              \r\n\r\n// get external force from input 1\r\nFext = in1;\r\n\r\n// compute force between the two masses:\r\n// if x2 > x the spring is elongated -> Force will be < for mass2 and > for mass1\r\nFcouple = ( x2 - x1 ) * stiff3;\r\n\r\n// Add for each mass the forces acting upon them\r\nF1 = -stiff1*x1 - damp1*v1 + Fcouple + Fext;     \r\nF2 = -stiff2*x2 - damp2*v2 - Fcouple;   \r\n\r\n// Update Mass 1 velocity and position\r\nv1 = v1 + T/mass1 * F1;\r\nx1 = x1 + T*v1;\r\n\r\n// Update Mass 2 velocity and position\r\nv2 = v2 + T/mass2 * F2;\r\nx2 = x2 + T*v2;\r\n    \r\n// output the mass position (displacement)\r\nout1 = x2;",
+									"code" : "\r\nParam mass(0.03,min=0.0001,max=1.0);                         \r\nParam stiff(2e3,min=0.1,max=1e6);\r\nParam damp(0.03,min=0,max=1000);\r\nParam barrierPos(0.4,min=-4.0,max=4.0);\r\nParam collisionStiff(1e6,min=0.0,max=1e9);\r\nParam collisionDamp(1.0,min=0.0,max=1e4);\r\n\r\nHistory x1(0.0);\r\nHistory v1(0.0);\r\nHistory F1(0.0);\r\nHistory Fcollision(0.0);\r\nHistory xmax(0.0);\r\n\r\n// Sample Period\r\nT = 1.0 / SAMPLERATE;                                             \r\n\r\nfo = sqrt(stiff/mass)/2.0/pi;\r\n\r\n// get external force from input 1\r\nFext = in1;\r\n            \r\n// update velocity\r\nv = v1 + T/mass * F1;\r\n\r\n//update position\r\nx = x1 + T*v;\r\n\r\nif (x>xmax) xmax = x;\r\n\r\n// compute 'penetration' into the barrier\r\nxdelta = x - barrierPos;\r\n \r\nif (xdelta > 0){\r\n\t// the sign of the resulting collision force \r\n\t// will be opposite to the penetration\r\n\tFcollision = -collisionStiff * xdelta - collisionDamp*v;\r\n }\r\nelse{\r\n\tFcollision=0;\r\n\t}\r\n\t\r\n//compute Force for the next step\r\nF1 = -stiff*x - damp*v + Fext + Fcollision;   \r\n\r\n\r\n// save state for the next step\r\nv1 = v;\r\nx1 = x;\r\n\r\n// output the mass position (displacement)\r\nout1 = x;\r\n\r\nout2 = xmax;",
 									"fontface" : 0,
 									"fontname" : "<Monospaced>",
 									"fontsize" : 12.0,
 									"id" : "obj-5",
 									"maxclass" : "codebox",
 									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 129.0, 72.0, 671.0, 530.0 ]
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 129.0, 72.0, 587.0, 480.0 ]
 								}
 
 							}
@@ -1082,7 +1112,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 129.0, 613.0, 35.0, 22.0 ],
+									"patching_rect" : [ 129.0, 561.0, 35.0, 22.0 ],
 									"text" : "out 1"
 								}
 
@@ -1097,6 +1127,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-5", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-4", 0 ],
 									"source" : [ "obj-5", 0 ]
 								}
@@ -1105,7 +1142,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 161.0, 376.0, 195.0, 22.0 ],
+					"patching_rect" : [ 150.0, 356.0, 195.0, 22.0 ],
 					"text" : "gen~"
 				}
 
@@ -1117,7 +1154,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 89.0, 312.0, 35.0, 22.0 ],
+					"patching_rect" : [ 184.0, 310.0, 35.0, 22.0 ],
 					"text" : "reset"
 				}
 
@@ -1129,99 +1166,86 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 172.0, 218.5, 50.0, 22.0 ],
+					"patching_rect" : [ 153.0, 181.5, 50.0, 22.0 ],
 					"text" : "start $1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"attr" : "mass1",
+					"attr" : "mass",
 					"id" : "obj-27",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 266.5, 248.0, 150.0, 22.0 ]
+					"patching_rect" : [ 220.0, 310.0, 150.0, 22.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"attr" : "stiff1",
+					"attr" : "stiff",
 					"id" : "obj-28",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 266.5, 279.0, 150.0, 22.0 ]
+					"patching_rect" : [ 379.5, 310.0, 150.0, 22.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"attr" : "damp1",
+					"attr" : "damp",
 					"id" : "obj-29",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 266.5, 311.0, 150.0, 22.0 ]
+					"patching_rect" : [ 541.0, 310.0, 150.0, 22.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"attr" : "stiff2",
+					"attr" : "collisionStiff",
 					"id" : "obj-4",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 464.0, 276.0, 150.0, 22.0 ]
+					"patching_rect" : [ 744.0, 310.0, 184.666667699813843, 22.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"attr" : "mass2",
+					"attr" : "barrierPos",
 					"id" : "obj-6",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 464.0, 245.0, 150.0, 22.0 ]
+					"patching_rect" : [ 640.0, 555.0, 150.0, 22.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"attr" : "damp2",
-					"id" : "obj-7",
+					"attr" : "collisionDamp",
+					"id" : "obj-30",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 464.0, 305.0, 150.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"attr" : "stiff3",
-					"id" : "obj-25",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 652.0, 300.0, 150.0, 22.0 ]
+					"patching_rect" : [ 744.0, 341.0, 150.0, 22.0 ]
 				}
 
 			}
@@ -1229,14 +1253,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"order" : 1,
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
 					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -1245,14 +1261,21 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-36", 0 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-34", 0 ],
+					"destination" : [ "obj-43", 0 ],
+					"source" : [ "obj-1", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -1266,14 +1289,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
+					"destination" : [ "obj-26", 0 ],
 					"source" : [ "obj-16", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
+					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -1310,13 +1333,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-21", 0 ]
 				}
@@ -1332,7 +1348,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-25", 0 ]
+					"source" : [ "obj-26", 0 ]
 				}
 
 			}
@@ -1354,6 +1370,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 1 ],
+					"source" : [ "obj-31", 0 ]
 				}
 
 			}
@@ -1395,13 +1425,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -1422,13 +1445,6 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "Coupled_Mass_Spring_Damper_Gen_Simulation copy.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "wfknob.png",
 				"bootpath" : "C74:/media/max/picts",
 				"type" : "PNG",
@@ -1441,61 +1457,7 @@
 				"implicit" : 1
 			}
  ],
-		"autosave" : 1,
-		"snapshot" : 		{
-			"filetype" : "C74Snapshot",
-			"version" : 2,
-			"minorversion" : 0,
-			"name" : "snapshotlist",
-			"origin" : "jpatcher",
-			"type" : "list",
-			"subtype" : "Undefined",
-			"embed" : 1,
-			"snapshot" : 			{
-				"valuedictionary" : 				{
-					"parameter_values" : 					{
-						"live.gain~" : -7.462943420732202
-					}
-
-				}
-
-			}
-,
-			"snapshotlist" : 			{
-				"current_snapshot" : 0,
-				"entries" : [ 					{
-						"filetype" : "C74Snapshot",
-						"version" : 2,
-						"minorversion" : 0,
-						"name" : "Coupled_Mass_Spring_Damper_Gen_Simulation copy",
-						"origin" : "Coupled_Harmonic_Oscillators",
-						"type" : "patcher",
-						"subtype" : "Undefined",
-						"embed" : 1,
-						"snapshot" : 						{
-							"valuedictionary" : 							{
-								"parameter_values" : 								{
-									"live.gain~" : -7.462943420732202
-								}
-
-							}
-
-						}
-,
-						"fileref" : 						{
-							"name" : "Coupled_Mass_Spring_Damper_Gen_Simulation copy",
-							"filename" : "Coupled_Mass_Spring_Damper_Gen_Simulation copy.maxsnap",
-							"filepath" : "~/Documents/Max 8/Snapshots",
-							"filepos" : -1,
-							"snapshotfileid" : "03c6ead57ac16b5288a28d2113dde066"
-						}
-
-					}
- ]
-			}
-
-		}
-
+		"autosave" : 0
 	}
 
 }

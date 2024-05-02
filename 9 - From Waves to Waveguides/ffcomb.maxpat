@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 106.0, 826.0, 622.0 ],
+		"rect" : [ 58.0, -887.0, 1377.0, 853.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -84,7 +84,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-17",
@@ -197,7 +196,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 223.0, 75.0, 95.0, 22.0 ],
+					"patching_rect" : [ 185.0, 137.0, 95.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -217,7 +216,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 223.0, 47.0, 24.0, 24.0 ]
+					"patching_rect" : [ 185.0, 109.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -233,7 +232,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 344.0, 210.0, 56.0, 22.0 ],
-					"sig" : 0.48
+					"sig" : 0.992
 				}
 
 			}
@@ -245,7 +244,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 281.0, 165.0, 24.0, 24.0 ]
+					"patching_rect" : [ 299.0, 92.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -268,7 +267,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 281.0, 210.0, 39.0, 22.0 ],
+					"patching_rect" : [ 299.0, 137.0, 39.0, 22.0 ],
 					"text" : "click~"
 				}
 
@@ -338,7 +337,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 84.0, 131.0, 600.0, 450.0 ],
+						"rect" : [ 251.0, -887.0, 1297.0, 850.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -675,7 +674,7 @@
 			"snapshot" : 			{
 				"valuedictionary" : 				{
 					"parameter_values" : 					{
-						"live.gain~" : -8.378602159266187
+						"live.gain~" : -9.559055118110258
 					}
 
 				}
@@ -696,7 +695,7 @@
 						"snapshot" : 						{
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
-									"live.gain~" : -8.378602159266187
+									"live.gain~" : -9.559055118110258
 								}
 
 							}

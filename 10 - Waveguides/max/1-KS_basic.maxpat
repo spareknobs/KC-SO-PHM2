@@ -40,101 +40,6 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"autosave" : 1,
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"id" : "obj-35",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 8,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal", "signal", "", "list", "int", "", "", "" ],
-					"patching_rect" : [ 95.0, 502.0, 300.0, 100.0 ],
-					"save" : [ "#N", "vst~", "loaduniqueid", 0, "C74_AU:/GTR Tuner (m)", ";" ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_invisible" : 1,
-							"parameter_longname" : "vst~",
-							"parameter_shortname" : "vst~",
-							"parameter_type" : 3
-						}
-
-					}
-,
-					"saved_object_attributes" : 					{
-						"parameter_enable" : 1,
-						"parameter_mappable" : 0
-					}
-,
-					"snapshot" : 					{
-						"filetype" : "C74Snapshot",
-						"version" : 2,
-						"minorversion" : 0,
-						"name" : "snapshotlist",
-						"origin" : "vst~",
-						"type" : "list",
-						"subtype" : "Undefined",
-						"embed" : 1,
-						"snapshot" : 						{
-							"pluginname" : "GTR Tuner (m).auinfo",
-							"plugindisplayname" : "GTR Tuner (m)",
-							"pluginsavedname" : "C74_AU:/GTR Tuner (m)",
-							"pluginsaveduniqueid" : 1414411085,
-							"version" : 1,
-							"isbank" : 0,
-							"isbase64" : 1,
-							"sliderorder" : [  ],
-							"slidervisibility" : [  ],
-							"blob" : "1419.hAGaoMGcv.C1AHv.DTfAGfPBJrvDTTgEWvUag4VclE1XzUmbkIGUjEFcgwUYrUVak4Fcs3VXsUlVWElckM2WXA0bzc0b0IFc4AWYWYWYxMWZu4FUzkGbkQkag0VYRr1bWYEPRyPCNDQTwDkLQ+.DQAiWMEVZtARRtAWczAhP0MWzOHwWP7PSgklaf7TczAWczAhP0M2SQPPi...AMB...P....P.T4zLMMWYzED..PPaXA0bzwCTxU1bkQ2PnUmaqgUSLQkbkUFH1Ulbyk1at0iHxHhOJ.BHf.BOPIWYyUFcf3TXsUVOhHBHGUlakIWZiQUdvUVOhPkSyzjH9n.Hf.BHf.BHfvCTxU1bkQGRkEFYkImOJ.BHf.BHf.BHf.BHfvCTrU2Yo4lSg0VY9bDURABU04VYxwyKPwVcmklaNEVak4iBf.BHf.BHf.BHf.BH7.Ea0cVZtMUchMzasAmOT4zLMwyKPwVcmklaSUmXC8Vav4iBf.BHf.BHf.BHf.BH7.Ea0cVZtYUYxMWZu4lOw.iKv3RM3vyKPwVcmklaVUlbyk1at4iBf.BHf.BHf.BHf.BH7DzXzklckMUYzUGb9LUQTUETeEDOuDzXzklckMUYzUGb9n.Hf.BHf.BHf.BHf.BORUVXj8jarkmOzIWckwyKRUVXj8jarkmOJ.BHf.BHf.BH77BTxU1bkQGRkEFYkImOJ.BHf.BHf.BH7.kbkMWYzQTXzEFHSUFc0AWOhLUQTUETeEjH9n.Hf.BHf.BHf.BHf.BOPElbg0VYzUlbyABU4AWY8HhTkEFaW8lbrQlH9.CHv.BLf.CHv.xLw.xMf.CHv.BLJ.CHv.hMx.xMf.CHv.BLf.CHpnfJfnBHp.hJf.iK3.CLv.CLv.CLv.CLv.CLvPCMzDCHp.hJfnBHvn.Lf.CHv.BLf.CHx.CHzjSN0.BM4jSMf.iK4jCLv.CLv.CLv.CLv.CLxDyLwXiBv.RLfPCLf.CHw3RMfPCMv.BMfLSLz.RK1TiBv.hLtHCLv.CLv.CLv.CLv.CLvDyM2XCHv.BLfHCLfDSN4.BLfnBHpnfJfnBHp.hJfnBHp.hJfnBHpnfJfDCHw.RLfDCHw.RLfDCHwnPLfDCHw.RLfnBHp.RL0.CHsPCLfXCLv.iBz.CLv.BOu.UXxEVakQWYxMmOJ.BHf.BHf.BH77BTxU1bkQGQgQWX9n.Hf.BHf.BHfvCTxU1bkQGQgQWXfLUYzUGb8HxTEQUUP8kPh3iBf.BHf.BHf.BHf.BH7.UXxEVakQWYxMGHTkGbk0iHRUVXrc0axwFYh3CLf.CHv.BLf.CHyDCH2.BLf.CHvn.Lf.CH1HCH2.BLf.CHv.BLfnhBp.hJfnBHp.BLtfCLv.CLv.CLv.CLv.CLv.CMzPSLfnBHp.hJf.iBv.BLf.CHv.BLfHCLfPSN4TCHzjSN0.BLtjSNv.CLv.CLv.CLv.CLvHSLyDiMJ.CHw.BMv.BLfDiK0.BMz.CHv.xLwPCHsXSMJ.CHx3hLv.CLv.CLv.CLv.CLv.SL2biMf.CHv.hLv.RL4jCHv.hJfnhBp.hJfnBHp.hJfnBHp.hJfnhBp.RLfDCHw.RLfDCHw.RLfDiBw.RLfDCHw.hJfnBHwTCLfzBMv.hMv.CLJPCLv.CH77BTgIWXsUFckI2b9n.Hf.BHf.BHfvyKPIWYyUFcDEFcg4iBf.BHfvyKPIWYyUFc9n.Ou.kbkMWYzMDZ041ZX0DSTIWYk4iB.....HAUNMSSP.fDgUmY3gUUtQWZzwVYjA.B.jA.l.vJ.fC.CAvR.LE.XAPW.HF.iA.Z.nF.rAva.DG..Bvf.TYAlTvJEzRAx........HP..........fA..................TvN"
-						}
-,
-						"snapshotlist" : 						{
-							"current_snapshot" : 0,
-							"entries" : [ 								{
-									"filetype" : "C74Snapshot",
-									"version" : 2,
-									"minorversion" : 0,
-									"name" : "GTR Tuner (m)",
-									"origin" : "GTR Tuner (m).auinfo",
-									"type" : "AudioUnit",
-									"subtype" : "AudioEffect",
-									"embed" : 0,
-									"snapshot" : 									{
-										"pluginname" : "GTR Tuner (m).auinfo",
-										"plugindisplayname" : "GTR Tuner (m)",
-										"pluginsavedname" : "C74_AU:/GTR Tuner (m)",
-										"pluginsaveduniqueid" : 1414411085,
-										"version" : 1,
-										"isbank" : 0,
-										"isbase64" : 1,
-										"sliderorder" : [  ],
-										"slidervisibility" : [  ],
-										"blob" : "1419.hAGaoMGcv.C1AHv.DTfAGfPBJrvDTTgEWvUag4VclE1XzUmbkIGUjEFcgwUYrUVak4Fcs3VXsUlVWElckM2WXA0bzc0b0IFc4AWYWYWYxMWZu4FUzkGbkQkag0VYRr1bWYEPRyPCNDQTwDkLQ+.DQAiWMEVZtARRtAWczAhP0MWzOHwWP7PSgklaf7TczAWczAhP0M2SQPPi...AMB...P....P.T4zLMMWYzED..PPaXA0bzwCTxU1bkQ2PnUmaqgUSLQkbkUFH1Ulbyk1at0iHxHhOJ.BHf.BOPIWYyUFcf3TXsUVOhHBHGUlakIWZiQUdvUVOhPkSyzjH9n.Hf.BHf.BHfvCTxU1bkQGRkEFYkImOJ.BHf.BHf.BHf.BHfvCTrU2Yo4lSg0VY9bDURABU04VYxwyKPwVcmklaNEVak4iBf.BHf.BHf.BHf.BH7.Ea0cVZtMUchMzasAmOT4zLMwyKPwVcmklaSUmXC8Vav4iBf.BHf.BHf.BHf.BH7.Ea0cVZtYUYxMWZu4lOw.iKv3RM3vyKPwVcmklaVUlbyk1at4iBf.BHf.BHf.BHf.BH7DzXzklckMUYzUGb9LUQTUETeEDOuDzXzklckMUYzUGb9n.Hf.BHf.BHf.BHf.BORUVXj8jarkmOzIWckwyKRUVXj8jarkmOJ.BHf.BHf.BH77BTxU1bkQGRkEFYkImOJ.BHf.BHf.BH7.kbkMWYzQTXzEFHSUFc0AWOhLUQTUETeEjH9n.Hf.BHf.BHf.BHf.BOPElbg0VYzUlbyABU4AWY8HhTkEFaW8lbrQlH9.CHv.BLf.CHv.xLw.xMf.CHv.BLJ.CHv.hMx.xMf.CHv.BLf.CHpnfJfnBHp.hJf.iK3.CLv.CLv.CLv.CLv.CLvPCMzDCHp.hJfnBHvn.Lf.CHv.BLf.CHx.CHzjSN0.BM4jSMf.iK4jCLv.CLv.CLv.CLv.CLxDyLwXiBv.RLfPCLf.CHw3RMfPCMv.BMfLSLz.RK1TiBv.hLtHCLv.CLv.CLv.CLv.CLvDyM2XCHv.BLfHCLfDSN4.BLfnBHpnfJfnBHp.hJfnBHp.hJfnBHpnfJfDCHw.RLfDCHw.RLfDCHwnPLfDCHw.RLfnBHp.RL0.CHsPCLfXCLv.iBz.CLv.BOu.UXxEVakQWYxMmOJ.BHf.BHf.BH77BTxU1bkQGQgQWX9n.Hf.BHf.BHfvCTxU1bkQGQgQWXfLUYzUGb8HxTEQUUP8kPh3iBf.BHf.BHf.BHf.BH7.UXxEVakQWYxMGHTkGbk0iHRUVXrc0axwFYh3CLf.CHv.BLf.CHyDCH2.BLf.CHvn.Lf.CH1HCH2.BLf.CHv.BLfnhBp.hJfnBHp.BLtfCLv.CLv.CLv.CLv.CLv.CMzPSLfnBHp.hJf.iBv.BLf.CHv.BLfHCLfPSN4TCHzjSN0.BLtjSNv.CLv.CLv.CLv.CLvHSLyDiMJ.CHw.BMv.BLfDiK0.BMz.CHv.xLwPCHsXSMJ.CHx3hLv.CLv.CLv.CLv.CLv.SL2biMf.CHv.hLv.RL4jCHv.hJfnhBp.hJfnBHp.hJfnBHp.hJfnhBp.RLfDCHw.RLfDCHw.RLfDiBw.RLfDCHw.hJfnBHwTCLfzBMv.hMv.CLJPCLv.CH77BTgIWXsUFckI2b9n.Hf.BHf.BHfvyKPIWYyUFcDEFcg4iBf.BHfvyKPIWYyUFc9n.Ou.kbkMWYzMDZ041ZX0DSTIWYk4iB.....HAUNMSSP.fDgUmY3gUUtQWZzwVYjA.B.jA.l.vJ.fC.CAvR.LE.XAPW.HF.iA.Z.nF.rAva.DG..Bvf.TYAlTvJEzRAx........HP..........fA..................TvN"
-									}
-,
-									"fileref" : 									{
-										"name" : "GTR Tuner (m)",
-										"filename" : "GTR Tuner (m).maxsnap",
-										"filepath" : "~/Documents/Max 8/Snapshots",
-										"filepos" : -1,
-										"snapshotfileid" : "d99e85cb1e34439bbbee0e279be2bfb0"
-									}
-
-								}
- ]
-						}
-
-					}
-,
-					"text" : "vst~ \"C74_AU:/GTR Tuner (m)\"",
-					"varname" : "vst~",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Lato",
 					"fontsize" : 12.0,
 					"id" : "obj-2",
@@ -1291,14 +1196,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-35", 0 ],
-					"order" : 2,
-					"source" : [ "obj-4", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-7", 1 ],
 					"order" : 0,
 					"source" : [ "obj-4", 0 ]
@@ -1343,7 +1240,6 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-35" : [ "vst~", "vst~", 0 ],
 			"obj-4" : [ "live.gain~", "live.gain~", 0 ],
 			"parameterbanks" : 			{
 
@@ -1352,14 +1248,7 @@
 			"inherited_shortname" : 1
 		}
 ,
-		"dependency_cache" : [ 			{
-				"name" : "GTR Tuner (m).maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
- ],
+		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
 

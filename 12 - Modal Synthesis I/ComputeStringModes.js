@@ -76,8 +76,8 @@ function bang(){
 		    a2 = - r*r;
 		    b1 = 1 - ((a2 + a1));
 			
-		    // modal weights          
-		    vWin =  Math.sin( pluckPos * g );      
+		    // modal weights  (with Knorm correction)        
+		    vWin =  2.0 / g * Math.sin( pluckPos * g );      
 		    vWout =  Math.sin( pickupPos * g );
 		}
 		

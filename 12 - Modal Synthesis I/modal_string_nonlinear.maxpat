@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -276.0, -993.0, 1498.0, 959.0 ],
+		"rect" : [ -160.0, -993.0, 1498.0, 959.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -439,11 +439,11 @@
 					"patching_rect" : [ 828.0, 148.0, 145.0, 67.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 5, "obj-9", "toggle", "int", 1, 5, "obj-56", "live.gain~", "float", -26.551837921142578, 5, "obj-5", "flonum", "float", 21.0, 5, "obj-6", "number", "int", 113, 5, "obj-61", "flonum", "float", 0.75, 5, "obj-67", "flonum", "float", 68.0, 5, "obj-70", "flonum", "float", 0.509999990463257, 5, "obj-25", "flonum", "float", 0.391999989748001, 5, "obj-21", "flonum", "float", 1.616000056266785, 5, "obj-24", "flonum", "float", 0.28999999165535, 5, "obj-43", "flonum", "float", 0.130999997258186 ]
+							"data" : [ 5, "obj-37", "attrui", "attr", "dcblock", 5, "obj-37", "attrui", "int", 1, 5, "obj-60", "attrui", "attr", "preamp", 5, "obj-60", "attrui", "float", 0.0, 5, "obj-59", "attrui", "attr", "threshold", 5, "obj-59", "attrui", "float", 0.0, 5, "obj-55", "attrui", "attr", "lookahead", 5, "obj-55", "attrui", "int", 100, 5, "obj-9", "toggle", "int", 1, 5, "obj-56", "live.gain~", "float", -26.551837921142578, 5, "obj-5", "flonum", "float", 50.0, 5, "obj-6", "number", "int", 113, 5, "obj-61", "flonum", "float", 0.75, 5, "obj-67", "flonum", "float", 68.0, 5, "obj-70", "flonum", "float", 0.509999990463257, 5, "obj-25", "flonum", "float", 0.391999989748001, 5, "obj-21", "flonum", "float", 1.616000056266785, 5, "obj-24", "flonum", "float", 0.28999999165535, 5, "obj-43", "flonum", "float", 0.020999999716878, 5, "obj-47", "number", "int", 0, 5, "obj-50", "toggle", "int", 0 ]
 						}
 , 						{
 							"number" : 2,
-							"data" : [ 5, "obj-9", "toggle", "int", 1, 5, "obj-56", "live.gain~", "float", -29.693132400512695, 5, "obj-5", "flonum", "float", 10.0, 5, "obj-6", "number", "int", 113, 5, "obj-61", "flonum", "float", 0.275999993085861, 5, "obj-67", "flonum", "float", 68.0, 5, "obj-70", "flonum", "float", 2.890000104904175, 5, "obj-25", "flonum", "float", 0.391999989748001, 5, "obj-21", "flonum", "float", 1.616000056266785, 5, "obj-24", "flonum", "float", 0.28999999165535, 5, "obj-43", "flonum", "float", 0.130999997258186 ]
+							"data" : [ 5, "obj-37", "attrui", "attr", "dcblock", 5, "obj-37", "attrui", "int", 1, 5, "obj-60", "attrui", "attr", "preamp", 5, "obj-60", "attrui", "float", 0.0, 5, "obj-59", "attrui", "attr", "threshold", 5, "obj-59", "attrui", "float", 0.0, 5, "obj-55", "attrui", "attr", "lookahead", 5, "obj-55", "attrui", "int", 100, 5, "obj-9", "toggle", "int", 1, 5, "obj-56", "live.gain~", "float", -29.693132400512695, 5, "obj-5", "flonum", "float", 42.0, 5, "obj-6", "number", "int", 113, 5, "obj-61", "flonum", "float", 0.569999992847443, 5, "obj-67", "flonum", "float", 68.0, 5, "obj-70", "flonum", "float", 2.890000104904175, 5, "obj-25", "flonum", "float", 0.391999989748001, 5, "obj-21", "flonum", "float", 1.616000056266785, 5, "obj-24", "flonum", "float", 0.28999999165535, 5, "obj-43", "flonum", "float", 0.007000000216067, 5, "obj-47", "number", "int", 0, 5, "obj-50", "toggle", "int", 0 ]
 						}
 , 						{
 							"number" : 3,
@@ -1074,6 +1074,19 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"attr" : "dcblock",
+					"id" : "obj-37",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 15.5, 527.5, 150.0, 22.0 ]
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -1232,6 +1245,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-66", 0 ],
 					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-65", 0 ],
+					"source" : [ "obj-37", 0 ]
 				}
 
 			}
@@ -1468,7 +1488,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "ComputeStringModes.js",
-				"bootpath" : "~/My Drive/Koncon/KC-SO-PHM2/12 - Modal Synthesis I",
+				"bootpath" : "~/My Drive/Koncon/KC-SO-PHM2/12 - Modal Synthesis I - Strings",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1

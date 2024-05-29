@@ -14,8 +14,24 @@ var damp = 0.5;
 var damp2 = 0.0;
 
 var dispersion = 0.0;
+
+// string length
 var L = 0.84;
+
+// tuning
 var f0 = 120.0;
+
+// string diameter
+var dia = 0.001;
+
+// string cross-section area (m2)
+var Area = dia*dia/4 * pi;
+
+// Material Density (Kg/m3) 7700 - 8000  (steel
+var density = 5500;  
+
+// density per unit length
+var sigma = density * Area;   
 
 var pi = 3.141592;
 var twopi = 2*pi;
@@ -74,18 +90,13 @@ function bang(){
 			// calculate coefficients
 			a1 =  2.0 * r  * Math.cos( omega / samplerate );
 		    a2 = - r*r;
-		    b1 = 1 - ((a2 + a1));
-			
-		    // modal weights          
-		    //vWin =  Math.sin( pluckPos * g );      
-		    //vWout =  Math.sin( pickupPos * g );
-			//vCWin =  Math.sin( collisionPos * g );      
+		    b1 = 1 / (samplerate*samplerate) / sigma;
 			
 			// modal weights (K/Knorm)
-			vWin =  2.0 / g * Math.sin( pluckPos * g );
+			vWin =  2.0 / L * Math.sin( pluckPos * g );
     		vWout =  Math.sin( pickupPos * g );
 
-			vCWin =  2.0 / g * Math.sin( collisionPos * g );
+			vCWin =  2.0 / L * Math.sin( collisionPos * g );
 			vCWout = Math.sin( collisionPos * g );
 		}
 		

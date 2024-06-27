@@ -1,4 +1,7 @@
 
+var pi = 3.141592;
+var twopi = 2*pi;
+
 var maxfreq = 12000;
 var nmodes = 80;
 var samplerate = 44100;
@@ -32,9 +35,6 @@ var density = 5500;
 
 // density per unit length
 var sigma = density * Area;   
-
-var pi = 3.141592;
-var twopi = 2*pi;
 
 var freqs = new Buffer("freqs");
 var Win = new Buffer("Win");
